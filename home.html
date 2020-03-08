@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+	<title>Page Title</title>
+<style>
+	.base{
+
+	    position: absolute;
+	    border-radius: 50%;
+	    height: 20px;
+	    width: 20px;
+	    background-color: white;
+	    }
+	.welcome{
+		width: 50%;
+		height: 50%; 
+		margin-left: 25%;
+		}
+	.choice{
+		border: solid white 2px;
+		opacity: 50%;
+		display: inline-block;
+		padding: 5px;
+	}
+	</style>
+</head>
+
+<body>
+	<div style="background-image: linear-gradient(to right, #00887A, #A8D0E6);width: 100%;height: 600px;text-align: center;padding-top: 10%;">
+	<div class="jumbotron jumbotron-fluid welcome" style="font-family: 'Lobster', cursive;text-align: center;background-color: transparent;border: solid white 4px;opacity: 90%;">
+    <h1 id="welcome_text" style="color: white;opacity: 70%;font-size: 10vw">Welcome</h1>
+  	</div>
+	</div>
+	<br>
+	<div style="background-image: linear-gradient(to right, #F76C6C , #A8D0E6);width: 100%;height: 600px;text-align: center;padding: 5
+	0px;">
+	<br>
+	<div class="choice">
+		SPORTS
+	</div>
+	<div class="choice">
+		MOVIES
+	</div>
+	<div class="choice">
+		ENVIRONMENT
+	</div>
+	<div class="choice">
+		HISTORY
+	</div>
+	<div class="container" style="padding-top: 30px;">
+		<div class="jumbotron jumbotron-fluid welcome" style="text-align: center;background-color: transparent;border: solid white 4px;opacity: 90%;">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	</div>
+	
+    <script type="text/javascript" src="my_particles.js"></script>
+    <script type="text/javascript">
+        creat_particles(50);
+        document.getElementById("welcome_text").addEventListener("mouseover",function(){
+        	document.getElementById("welcome_text").style.opacity = 100 + '%';
+        });
+        document.getElementById("welcome_text").addEventListener("mouseout",function(){
+        	document.getElementById("welcome_text").style.opacity = 70 + '%';
+        });
+        document.getElementById("welcome_text").addEventListener("click",function(){
+        	window.scrollTo(0,620);
+        });
+    </script>
+</body>
+</html>
+
+​
+
